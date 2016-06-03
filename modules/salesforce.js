@@ -154,7 +154,7 @@ let createHomeViewing = (propertyId, propertyName, customerId, viewDateTime) => 
     return new Promise((resolve, reject) => {
         let c = nforce.createSObject('Home_Viewing__c');
         c.set('Property__c', propertyId);
-        c.set('Contact__c', '0033600000EOYTxAAP');
+        c.set('Contact__c', '003B0000006cAbDIAU');
         c.set('Status__c', 'Not Started');
         c.set('Datetime__c', viewDateTime);
         c.set('Name', propertyName);
