@@ -105,7 +105,7 @@ exports.confirm_visit = (sender, values) => {
 
         var hv_date = new Date(Date.UTC(year, month, day, hour, 0, 0));
 
-        hv_date.setUTCHours(hv_date.getUTCHours() + hv_date.getTimezoneOffset());
+        hv_date.setUTCHours(hv_date.getUTCHours() + 420/60);
         console.log(hv_date);
 
         salesforce.createHomeViewing(properties[0].get('id'), properties[0].get('title__c'), sender, hv_date).then(() => {
